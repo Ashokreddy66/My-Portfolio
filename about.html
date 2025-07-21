@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet">
+        <style>
+          
+            *{
+
+
+
+                margin:0px;
+                padding:0;
+            }
+          body{
+            background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0.3));
+             backdrop-filter: blur(10px);
+
+            color: rgb(180, 160, 160);
+           font-family: "Libertinus Mono", monospace;
+          }
+          nav{
+              display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height:30px;
+            background-color: rgba(148, 143, 154, 0.429);
+          }
+            nav ul{
+                display: flex;
+                justify-content:center;
+            }
+            nav ul li {
+                list-style: none;
+                margin:0 25px;
+            }
+             nav ul li a{
+               text-decoration: none;
+                color :black
+            }
+                nav ul li a:hover{ 
+                    color:brown;
+               font-size : 1.4rem;
+            }
+              
+               
+            
+            .left{
+                font-size: 2rem;
+            }
+            .first{
+                display: flex;
+                justify-content: space-around;
+                margin: 80px 0px;
+                align-items:center;
+            }
+             .first >div{
+             width:30%;
+            }  
+          .rightsection{
+            
+             border-radius: 40%;
+
+          }
+          .rightsection img{
+          width: 300px;
+          height: 300px;
+          border-radius: 20%;
+
+          }
+           .hi{
+            color: blueviolet;
+
+           }
+           #element
+           {
+            color: blueviolet;
+           }
+           .about{
+             font-size:25px;
+             margin-left: 10px;
+             align-items: flex-start;
+             justify-content: space-between;
+
+            }
+             .about h2{
+             font-size:40px;
+             margin:10px 10px;
+             color:rgb(72, 9, 66)
+            }
+       .name{
+        color: rgb(162, 37, 120);
+        font-size: 40px;
+       }
+       .skills{
+        color:rgb(162, 37, 120);
+       }
+       .leftsection{
+        font-size: 25px;
+       }
+        </style>
+      </head>
+    <body>
+     <header>
+            <nav>
+                  <div class="left"> Ashok Portfilo</div>
+                  <div class="right">
+                    <ul>
+                        <li><a href="portfolio1.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li> 
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="first">
+                <div class="leftsection">
+                             Hi My name is<span class="hi"> Ashok Reddy</span>
+                             <div>I'm a passionate </div>
+
+                               <span id="element"></span>
+                </div>
+                <div class="rightsection">
+                       <img src="ashok.html.jpeg" alt="">
+                </div>
+
+            </section>
+            <section class="about">
+                      <h2>About Me</h2>
+                        <p>My name is <b class="name">Ch.Ashok Reddy</b> Currently pursuring B.tech Second year
+                           and I am a Self-Motivated Person to Upgrade my skills . And I have a short term goal is to Earn Money
+                         using My skills like <b class="skills">Graphic Designer,Engineer,Prompt Enginner</b> And have long term plans
+                         that is build my own startup and order to HR,s  I want to upgrade My confidence and skills in upcoming days</p>
+                        </section>
+
+        </main>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Graphic Designer', 'AI&ML Engineer','Web Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+    </body>
+</html>
