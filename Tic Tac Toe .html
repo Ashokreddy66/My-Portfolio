@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #548687;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .Container {
+            height: 70vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .game {
+            height: 60vmin;
+            width: 60vmin;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+        }
+        .box {
+            height: 18vmin;
+            width: 18vmin;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem #833f3f;
+            background-color: #f0f0f0;
+            font-size: 5.6rem;
+            color: #fd0c0c;
+            cursor: pointer;
+        }
+        .box:hover {
+            background-color: #bbbbbb;
+        }
+        .reset {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 1rem;
+            border: none;
+            background-color: #f0f0f0;
+            color: #fd0c0c;
+            cursor: pointer;
+            box-shadow: 0 0 1rem #833f3f;
+        }
+        .reset:hover {
+            background-color: #aaaaaa;
+        }
+        .New {
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 12px 24px;
+            margin: 10px;
+            background-color: #fd0c0c;
+            border: none;
+            color: white;
+            border-radius: 2rem;
+            display: none; /* hidden by default */
+        }
+        .New:hover {
+            background-color: lightyellow;
+            color: black;
+        }
+        .msg-container {
+            font-weight: bold;
+            font-family: Arial;
+            height: 20vmin;
+        }
+
+        @keyframes winnerEffect {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+                color: red;
+                text-shadow: none;
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+                color: gold;
+                text-shadow: 0 0 10px gold;
+            }
+            100% {
+                transform: scale(1);
+                color: rgb(202, 43, 43);
+                text-shadow: 0 0 15px rgb(0, 128, 122);
+            }
+        }
+
+        #msg {
+            font-size: 5vmin;
+            display: none;
+        }
+
+        .show {
+            display: block !important;
+            animation: winnerEffect 1.5s ease-in-out forwards;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="msg-container">
+        <p id="msg">Winner</p>
+        <button class="New" id="newGameBtn">New Game</button>
+    </div>
+    <main>
+        <h1 class="heading">Let's Play</h1>
+        <div class="Container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button class="reset">Reset</button>
+    </main>
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+        const resetButton = document.querySelector('.reset');
+        const newGameBtn = document.querySelector('#newGameBtn');
+        const msg = document.querySelector('#msg');
+
+        let currentPlayer = 'X';
+        let gameActive = true;
+
+        const winningConditions = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ];
+
+        function handleBoxClick(event) {
+            const clickedBox = event.target;
+            if (clickedBox.textContent !== '' || !gameActive) return;
+
+            clickedBox.textContent = currentPlayer;
+            checkResult();
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        }
+
+        function checkResult() {
+            let roundWon = false;
+            for (let i = 0; i < winningConditions.length; i++) {
+                const [a, b, c] = winningConditions[i];
+                const valA = boxes[a].textContent;
+                const valB = boxes[b].textContent;
+                const valC = boxes[c].textContent;
+
+                if (valA && valA === valB && valB === valC) {
+                    roundWon = true;
+                    showWinner(valA);
+                    break;
+                }
+            }
+
+            if (!roundWon && [...boxes].every(box => box.textContent !== '')) {
+                showWinner("It's a Draw!");
+            }
+        }
+
+        function showWinner(winner) {
+            msg.textContent = winner === "It's a Draw!" ? winner : `👑 Player ${winner} Wins!👑 `;
+            msg.classList.add('show');
+            newGameBtn.style.display = 'inline-block';
+            gameActive = false;
+        }
+
+        function resetGame() {
+            boxes.forEach(box => box.textContent = '');
+            currentPlayer = 'X';
+            gameActive = true;
+            msg.classList.remove('show');
+            msg.style.display = 'none';
+            newGameBtn.style.display = 'none';
+        }
+
+        boxes.forEach(box => box.addEventListener('click', handleBoxClick));
+        resetButton.addEventListener('click', resetGame);
+        newGameBtn.addEventListener('click', resetGame);
+    </script>
+</body>
+</html>

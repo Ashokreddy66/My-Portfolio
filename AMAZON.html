@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazon Landing Page</title>
+      <link rel="stylesheet"  href="amazon.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+      <header>
+        <div class="navtotal">
+          <div class="navleft border">
+            <div class="logo"></div>
+          </div>
+                  <!--Address bar-->
+          <div class="addressbar sec-border">
+            <p class="first-add">Deliver To</p>
+            <div class="icon1">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="sec-add">India</p>
+            </div>
+          </div>
+
+                     <!--Search bar-->
+          <div class="searching">
+            <select  class="search-select">   
+              <option>All</option>
+            </select>
+            <input type="text" placeholder="search chai bey gandu" >
+            <div class="search-icon">
+                 <i class="fa-solid fa-magnifying-glass"></i> 
+            </div>
+          </div>
+
+
+                    <!--Language Bar-->
+
+           <div class="nav-item third-border" id="language-dropdown">
+            <button class="nav-trigger" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">EN</button>
+            <div class="dropdown-panel" style="display: none;">
+                <div class="language-option">
+                    <input type="radio" name="language" id="lang-hi" checked>
+                    <label for="lang-hi">हिन्दी - HI</label>
+                </div>
+                <div class="language-option">
+                    <input type="radio" name="language" id="lang-ta">
+                    <label for="lang-ta">தமிழ் - TA</label>
+                </div>
+                <div class="language-option">
+                    <input type="radio" name="language" id="lang-te">
+                    <label for="lang-te">తెలుగు - TE</label>
+                </div>
+                <div class="language-option">
+                    <input type="radio" name="language" id="lang-kn">
+                    <label for="lang-kn">ಕನ್ನಡ - KN</label>
+                </div>
+                <div class="language-option">
+                    <input type="radio" name="language" id="lang-ml">
+                    <label for="lang-ml">മലയാളം - ML</label>
+                </div>
+                <div class="language-option">
+                    <input type="radio" name="language" id="lang-bn">
+                    <label for="lang-bn">বাংলা - BN</label>
+                </div>
+                <div class="language-option">
+                    <input type="radio" name="language" id="lang-mr">
+                    <label for="lang-mr">मराठी - MR</label>
+                </div>
+                <a href="#" class="learn-more">Learn more</a>
+                <div class="country-text">
+                    You are shopping on Amazon.in<br>
+                    <a href="#" class="change-link">Change country/region</a>
+                </div>
+            </div>
+            </div>
+                            <!--Accountant Bar-->
+             <div class="Account-details fourth-border">
+                  <p class="first-head">Hello Sign in</p>
+                  <div class="sec-head">Accounts & Lists</div>
+            </div>
+                          <!--Return bar-->
+             <div class="return fifth-border">
+                  <p class="return-head1">Returns</p>
+                  <div class="return-head2">&Orders</div>
+            </div>
+
+                      <!--Cart bar-->
+            <div class="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              cart
+            </div>
+      </div>
+
+                <!--Panel Bar-->
+
+      <div class="panel">
+        <div class="panel1">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+        <div class="panel2 sixth-border">
+          <p>Fresh</p>
+           <p> MX Player</p>
+            <p>Sell</p>
+           <p> Bestsellers</p>
+            <p>Today's Deals</p>
+            <p>Mobiles</p>
+            <p>Prime</p>
+           <p>Customer Service</p>
+           <p>Electronics</p>
+            <p>Fashion</p>
+            <p>New Releases</p>
+           <p>Home & Kitchen</p> 
+        </div>
+      </div>
+</header>
+                    <!--Carousal Container-->
+      <div class="carousel-container">
+        <div class="carousel-bg"></div>
+        <div class="carousel-nav">
+          <span class="nav-dot active" onclick="showSlide(1)"></span>
+          <span class="nav-dot" onclick="showSlide(2)"></span>
+          <span class="nav-dot" onclick="showSlide(3)"></span>
+          <span class="nav-dot" onclick="showSlide(4)"></span>
+        </div>
+      </div>
+                  <!--Div1-->
+        <div class="boxhead">
+             <div class="box item1">
+              <div class="content">
+                <h2>Appliances for your home | Up to 55% off</h2>
+                  <div class="item1-images">
+                    <div class="image-row">
+                      <img src="box2.jpg " >
+                      <img src="box1.2.jpg ">
+                  </div>
+                    <div class="image-row">
+                          <img src="box1.3.jpg ">
+                          <img src="box1.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/s?bbn=81107432031&rh=n%3A81107432031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=a7ba12a7-9387-49d5-ab0c-1eae31828218&pd_rd_w=eHst0&pd_rd_wg=OvQiQ&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=J4BA2DA9CYQFVFDRKHAA&ref=pd_hp_d_atf_unk">Seemore</a>
+                  </div>
+              </div>
+            </div>
+
+
+             <div class="box item1">
+              <div class="content content1">
+                <h2>Revamp your home in style</h2>
+                  <div class="item1-images">
+                    <div class="image-row image2-row">
+                      <img src="box2.1.jpg " >
+                      <img src="box2.2.jpg ">
+                  </div>
+                    <div class="image-row image2-row">
+                          <img src="box2.3.jpg ">
+                          <img src="box2.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&node=1380442031&pd_rd_w=taxAf&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=J4BA2DA9CYQFVFDRKHAA&pd_rd_wg=OvQiQ&pd_rd_r=a7ba12a7-9387-49d5-ab0c-1eae31828218&ref_=pd_hp_d_atf_unk">Seemore</a>
+                  </div>
+              </div></div>
+             <div class="box item1">
+              <div class="content content1">
+                <h2>Starting ₹149 | Headphones</h2>
+                  <div class="item1-images">
+                    <div class="image-row image2-row">
+                      <img src="box3.1.jpg " >
+                      <img src="box3.2.jpg ">
+                  </div>
+                    <div class="image-row image2-row">
+                          <img src="box3.3.jpg ">
+                          <img src="box3.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/s?k=noise&i=electronics&rh=n%3A1388921031%2Cp_n_condition-type%3A8609960031%2Cp_36%3A-200000&_encoding=UTF8&content-id=amzn1.sym.71850b5e-5657-45e6-935e-feb77b5645a2&pd_rd_r=a7ba12a7-9387-49d5-ab0c-1eae31828218&pd_rd_w=wFfBh&pd_rd_wg=OvQiQ&pf_rd_p=71850b5e-5657-45e6-935e-feb77b5645a2&pf_rd_r=J4BA2DA9CYQFVFDRKHAA&ref=pd_hp_d_atf_unk">Seemore</a>
+                  </div>
+              </div></div>
+             <div class="box item1">
+              <div class="content content1">
+                <h2>Get your desired TV screen size |
+                   Starting ₹6,999</h2>
+                  <div class="item1-images ">
+                    <div class="image-row image3-row">
+                      <img src="box4.1.jpg " >
+                      <img src="box4.2.jpg ">
+                  </div>
+                    <div class="image-row image3-row">
+                          <img src="box4.3.jpg ">
+                          <img src="box4.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/stores/page/preview/
+                    ref=man_sbc_LA_HALO1_BAU_NOV23_3/ref=man_sbc_LA_
+                    HALO1_BAU_NOV23_3/ref=man_sbc_LA_HALO1_BAU_NOV23_3
+                    /ref=man_sbc_hetvclp_2_1/?_encoding=UTF8&_encoding=
+                    UTF8&_encoding=UTF8&_encoding=UTF8&_encoding=UTF8&_
+                    encoding=UTF8&_encoding=UTF8&isPreview=1&isSlp=1&asins=
+                    B0B8YTGC23%2CB0D25MMHH2%2CB0DY7FPFLH%2CB09F6S8BT6%2CB0DBL
+                    LYXVV%2CB0DHL6N6BG%2CB0D4LJ9WVW%2CB0CZ6QH357%2CB0DDCDTP
+                    
+                    VC%2CB0DVGBNVM2%2CB0D9BYGT8J%2CB0D9BX9DMB%2CB0CZ6PVG32%2CB07MNNH484%2CB0DZHNQJQW%2CB0DPSD1PG5%2CB0CD1S96SM%2CB0DKNM4GPM%2CB0DZHMX6D3%2CB0DR2Q2R44%2CB0CZ6TRNGT%2CB0C4DPCKDJ%2CB0DCZH5MPC&pd_rd_w=eG09s&content-id=amzn1.sym.4859c46d-a364-4841-a4e3-09552c05ac52&pf_rd_p=4859c46d-a364-4841-a4e3-09552c05ac52&pf_rd_r=SKSGF7D44ZG189HN51E0&pd_rd_wg=wgBrM&pd_rd_r=85543148-6d2e-
+                    4a14-b59e-67aeb851152b&ref_
+                    =pd_hp_d_atf_unk">Seemore</a>
+                  </div>
+              </div></div>
+        </div>
+                      <!--Div2-->
+                      <div class="container2">
+                        <div class="container2.1">
+                        <h2>Related to items you've viewed  <a href="https://www.amazon.in/hz/mobile/mission/?_encoding=UTF8&p=v9LyO5UPAYBWUkjimzSrvLH9m2mjTY28Aq2LRtKdekXpegexRlJEKQZfXHWSdPjvn1dRSrLl2li7Ibmu76Nn%2BW0ZRtcTHeMBfKgBp8rxyg0mA1bEVz7qSSogygK7H%2BiiPXtnm3c%2B1%2B9lP7B3yJXB9gG%2B5QvX%2Fa0kXniUocqUNCme6Lpgbh6kuT3%2FCEgFF5k92EhSvjpaqEw9%2BOH%2Fv4vmbQvQEBfNYWwpHnfZW%2BincvOKt5Bwc9SgND3WHnSP%2FeQGK0itn5WrrRASfwP8%2F9f57fQy3jBapxcKWqHeqFyCshqSoaQGRgVQAaahQ9ZPPM4QfV%2Bn8Z9%2Bu7FTvccz9DBagPYHDaPK6A0XcIa632Bd%2BI9BACzLCULwNM5y4TZKvAUfmz6UJuz2sXrf8XfHzC%2F2DnFy8K4BAdVtuR0fx3pM6KgtQyHcjydT3sN6zlwZHoOZk63%2B5DBre8fRvoeT0NZUepbeIjcTtU4AyZqUK7y7CQQ%3D&pd_rd_w=f1EgU&content-id=amzn1.sym.163c611d-45af-44a2-803f-ecf4de66c803%3Aamzn1.symc.b1464ab7-6d6a-4fc8-be8f-f2e9bcc64228&pf_rd_p=163c611d-45af-44a2-803f-ecf4de66c803&pf_rd_r=J4BA2DA9CYQFVFDRKHAA&pd_rd_wg=Ylebq&pd_rd_r=47806524-8f6f-437e-9ad8-14e6efe20040&ref_=pd_hp_d_btf_ci_mcx_mr_ca_id_hp_d">see more</a> </h2>
+                       
+                           <div class="box1">
+                            <img src="2box1.1.jpg">
+                            <img src="2box1.2.jpg">
+                            <img src="2box1.3.jpg">
+                            <img src="2box1.4.jpg">
+                            <img src="2box1.5.jpg">
+                            <img src="2box1.6.jpg">
+                            </div>  
+                           </div>
+                      </div>
+                    <!--Div3-->
+                      <div class="container2 container3">
+                        <div class="container2.1">
+                        <h2>Up to 55% off | Electronics & accessories from Amazon Launchpad  <a href="https://www.amazon.in/b/?_encoding=UTF8&node=10894223031&pd_rd_w=gi2eQ&content-id=amzn1.sym.a8cbddb8-9da6-400b-b864-eb4b2042931c&pf_rd_p=a8cbddb8-9da6-400b-b864-eb4b2042931c&pf_rd_r=6ZMABFB62NPYKK2XVN5D&pd_rd_wg=KewUC&pd_rd_r=ce926f8f-0185-44e8-ac9b-958516856762&ref_=pd_hp_d_btf_LPDEALS">see more</a> </h2>
+                       
+                           <div class="box1 box2 ">
+                            <img src="3box1.1.jpg">
+                            <img src="3box1.2.jpg">
+                            <img src="3box1.3.jpg">
+                            <img src="3box1.4.jpg">
+                            <img src="3box1.5.jpg">
+                            <img src="3box1.6.jpg">
+                            </div>  
+                           </div>
+                      </div>
+                      <!--Div4-->
+                       <div class="container2 container3">
+                        <div class="container2.1">
+                        <h2>Starting ₹499 | Gear up for victory, next-level gaming starts here  <a href="https://www.amazon.in/s?k=gaming+items&crid=33I2N4LJNFK1R&sprefix=gaming+items%2Caps%2C356&ref=nb_sb_noss_1">see more</a> </h2>
+                       
+                           <div class="box1 box2 ">
+                            <img src="4box1.1.jpg">
+                            <img src="4box1.2.jpg">
+                            <img src="4box1.3.jpg">
+                            <img src="4box1.4.jpg">
+                            <img src="4box1.5.jpg">
+                            <img src="4box1.6.jpg">
+                            </div>  
+                           </div>
+                      </div>
+                      <!--Div5 😎Hero Section😉-->
+                       <div class="container2 container3">
+                        <div class="container2.1">
+                        <h2> Hero Section<a href="https://www.amazon.in/HARLEY-DAVIDSON-Motorcycle-440cc-booking-Ex-Showroom/dp/B0FDGY2KM1/?_encoding=UTF8&pd_rd_w=Vm2UD&content-id=amzn1.sym.c85ce2dc-2c4b-42b3-8150-5574e717462c&pf_rd_p=c85ce2dc-2c4b-42b3-8150-5574e717462c&pf_rd_r=56KRF9ZH546FM14SWH9V&pd_rd_wg=YMhdX&pd_rd_r=583d978e-5226-4a96-a29b-dc2817cfa27c&ref_=pd_hp_d_btf_ls_gwc_pc_en4_&th=1">see more</a> </h2>
+                       
+                           <div class="box1 box2 ">
+                            <img src="5box1.1.jpg">
+                            <img src="5box1.2.jpg">
+                            <img src="5box1.3.jpg">
+                            <img src="5box1.4.jpg">
+                            <img src="5box1.5.jpg">
+                            <img src="5box1.6.jpg">
+                            </div>  
+                           </div>
+                      </div>
+
+
+                      <!--hard Div-->
+                       <div class="boxhead hardhead">
+             <div class="box item1">
+              <div class="content">
+                <h2>Appliances for your home | Up to 55% off</h2>
+                  <div class="item1-images">
+                    <div class="image-row">
+                      <img src="box5.1.jpg " >
+                      <img src="box5.2.jpg ">
+                  </div>
+                    <div class="image-row">
+                          <img src="box5.3.jpg ">
+                          <img src="box5.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/s?bbn=81107432031&rh=n%3A81107432031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=a7ba12a7-9387-49d5-ab0c-1eae31828218&pd_rd_w=eHst0&pd_rd_wg=OvQiQ&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=J4BA2DA9CYQFVFDRKHAA&ref=pd_hp_d_atf_unk">Seemore</a>
+                  </div>
+              </div>
+            </div>
+
+
+             <div class="box item1">
+              <div class="content content1 content4">
+                <h2>Up to 65% off | Apparel, luggage & more from Amazo…</h2>
+                  <div class="item1-images">
+                    <div class="image-row image2-row">
+                      <img src="box6.1.jpg " >
+                      <img src="box6.2.jpg">
+                  </div>
+                    <div class="image-row image2-row">
+                          <img src="box6.3.jpg ">
+                          <img src="box6.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&node=1380442031&pd_rd_w=taxAf&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=J4BA2DA9CYQFVFDRKHAA&pd_rd_wg=OvQiQ&pd_rd_r=a7ba12a7-9387-49d5-ab0c-1eae31828218&ref_=pd_hp_d_atf_unk">Seemore</a>
+                  </div>
+              </div></div>
+             <div class="box item1">
+              <div class="content content1 content4">
+                <h2>Latest styles | Dresses, kurta & more | 50% - 80% off</h2>
+                  <div class="item1-images">
+                    <div class="image-row image2-row">
+                      <img src="box7.1.jpg " >
+                      <img src="box7.2.jpg ">
+                  </div>
+                    <div class="image-row image2-row">
+                          <img src="box7.3.jpg ">
+                          <img src="box7.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=84514749031&pd_rd_w=JW92T&content-id=amzn1.sym.1350f669-3050-4d58-9819-7ff3e03b8408&pf_rd_p=1350f669-3050-4d58-9819-7ff3e03b8408&pf_rd_r=AS999JV21X2FYYESM9NN&pd_rd_wg=QlPFe&pd_rd_r=2db71a7e-f5af-49eb-8a50-fae165618d67&ref_=pd_hp_d_btf_unk">Seemore</a>
+                  </div>
+              </div></div>
+             <div class="box item1">
+              <div class="content content1">
+                <h2>Automotive essentials | Up to 60% off</h2>
+                  <div class="item1-images ">
+                    <div class="image-row image3-row">
+                      <img src="box9.1.jpg " >
+                      <img src="box9.2.jpg ">
+                  </div>
+                    <div class="image-row image3-row">
+                          <img src="box9.3.jpg ">
+                          <img src="box9.4.jpg ">
+                    </div>
+                    <a href="https://www.amazon.in/stores/page/preview/
+                    ref=man_sbc_LA_HALO1_BAU_NOV23_3/ref=man_sbc_LA_
+                    HALO1_BAU_NOV23_3/ref=man_sbc_LA_HALO1_BAU_NOV23_3
+                    /ref=man_sbc_hetvclp_2_1/?_encoding=UTF8&_encoding=
+                    UTF8&_encoding=UTF8&_encoding=UTF8&_encoding=UTF8&_
+                    encoding=UTF8&_encoding=UTF8&isPreview=1&isSlp=1&asins=
+                    B0B8YTGC23%2CB0D25MMHH2%2CB0DY7FPFLH%2CB09F6S8BT6%2CB0DBL
+                    LYXVV%2CB0DHL6N6BG%2CB0D4LJ9WVW%2CB0CZ6QH357%2CB0DDCDTP
+                    
+                    VC%2CB0DVGBNVM2%2CB0D9BYGT8J%2CB0D9BX9DMB%2CB0CZ6PVG32%2CB07MNNH484%2CB0DZHNQJQW%2CB0DPSD1PG5%2CB0CD1S96SM%2CB0DKNM4GPM%2CB0DZHMX6D3%2CB0DR2Q2R44%2CB0CZ6TRNGT%2CB0C4DPCKDJ%2CB0DCZH5MPC&pd_rd_w=eG09s&content-id=amzn1.sym.4859c46d-a364-4841-a4e3-09552c05ac52&pf_rd_p=4859c46d-a364-4841-a4e3-09552c05ac52&pf_rd_r=SKSGF7D44ZG189HN51E0&pd_rd_wg=wgBrM&pd_rd_r=85543148-6d2e-
+                    4a14-b59e-67aeb851152b&ref_
+                    =pd_hp_d_atf_unk">Seemore</a>
+                  </div>
+              </div></div>
+        </div>
+                  
+
+                             <!--Footer-->
+
+      <footer>
+        <div class="foot-panel1">
+          <a href="file:///C:/Users/CH%20ASHOK%20REDDY/OneDrive/Desktop/Java%20Script/Amazon.html/Amazon%20Landing%20page.html">Back to top</a>
+        </div>
+        <div class="foot-panel2">
+          <ul>
+            <p>Get to Know Us</p> 
+            <a>About Amazon</a>
+            <a>Careers</a>
+            <a>Press Releases</a>
+            <a>Amazon Science</a>
+          </ul>
+          <ul>
+            <p>	Connect with Us</p>
+            <a>	Facebook</a>
+           <a>Twitter</a>
+            <a>Instagram</a>
+          </ul>
+          <ul>
+            <p>Make Money with Us</p>
+            <a>Sell on Amazon</a>
+            <a>Sell under Amazon Accelerator</a>
+            <a>Protect and Build Your Brand</a>
+            <a>Amazon Global Selling</a>
+            <a>Supply to Amazon</a>
+            <a>Become an Affiliate</a>
+            <a>Fulfilment by Amazon</a>
+            <a>Advertise Your Products</a>
+            <a>Amazon Pay on Merchants</a>
+          </ul>
+          <ul>
+            <p>	Let Us Help You</p>
+            <a>Your Account</a>
+            <a>Returns Centre</a>
+            <a>Recalls and Product Safety Alerts</a>
+            <a>100% Purchase Protection</a>
+            <a>Amazon App Download</a>
+            <a>Help</a>
+          </ul>
+        </div>
+
+          <div class="foot-panel3">
+            <div class="logo"></div>
+          </div>
+          
+          <div class="foot-panel4">
+            <div class="pages">
+               <a>Conditions of Use</a>
+            <a>Privacy Notice</a>
+            <a>You Ads privacy choices</a>
+            </div>
+           <div class="copy-right">
+            © 1996-2025, Amazon.com, Inc. or its affiliates
+          </div>
+          </div>
+          
+      </footer>
+                             <!--Script-->
+    <script>
+      function toggleDropdown() {
+        var panel = document.querySelector('#language-dropdown .dropdown-panel');
+        var trigger = document.querySelector('#language-dropdown .nav-trigger');
+        if (panel.style.display === "none" || panel.style.display === "") {
+          panel.style.display = "block";
+          trigger.setAttribute("aria-expanded", "true");
+        } else {
+          panel.style.display = "none";
+          trigger.setAttribute("aria-expanded", "false");
+        }
+      }
+      // Carousel background images
+        const bgImages = [
+          'bgimg6.jpg',
+          'bgimg4.png',
+          'Bgimg3.jpg',
+          'Bgimg5.jpg'
+        ];
+        let currentSlide = 0;
+        const bgDiv = document.querySelector('.carousel-bg');
+        const dots = document.querySelectorAll('.nav-dot');
+
+        function showSlide(n) {
+          currentSlide = n - 1;
+          bgDiv.style.backgroundImage = `url('${bgImages[currentSlide]}')`;
+          dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === currentSlide);
+          });
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % bgImages.length;
+          showSlide(currentSlide + 1);
+        }
+
+        // Initial setup
+        bgDiv.style.backgroundSize = 'cover';
+        bgDiv.style.backgroundPosition = 'center';
+        bgDiv.style.height = '400px'; // Adjust as needed
+        showSlide(1);
+
+        // Auto-slide every 2 seconds
+        setInterval(nextSlide, 2000);
+    </script>
+        
+    </body>
+</html>
